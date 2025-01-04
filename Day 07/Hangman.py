@@ -1,8 +1,8 @@
 import random
 from Hangman_words import word_list
-from Hangman_art import stages
+from Hangman_art import stages,logo
 
-
+print(logo)
 #TODO - 1 : Randomly choose a word from word_list and assign it to variable.
 chosen_word = random.choice(word_list)
 print(chosen_word)
@@ -40,5 +40,3 @@ while not game_over:
     elif lives == 0:
         game_over = True
         print('You lose!')
-
-
